@@ -1,3 +1,13 @@
+/*
+Algorithm:
+-no. of ways including coin(dp[coin][amount-coin] )
+-no. of ways excluding the coin(p[coin-1][amount])
+-total number of ways with including and excluding the coin
+
+dp[coin][amount] = dp[coin][amount-coin] + dp[coin-1][amount]
+
+*/
+
 class Solution {
 public:
     int change(int amount, vector<int>& coins) {
